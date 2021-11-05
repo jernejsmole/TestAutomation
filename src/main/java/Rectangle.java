@@ -35,7 +35,7 @@ public class Rectangle {
      * @return              the input value if greater than 0
      */
     public double checkInputParameter(double input, String parameterName) {
-        if (input <= 0) {
+        if (input >= 0) {
             throw new IllegalArgumentException("Parameter " + parameterName + " muss größer 0 sein!");
         }
 
